@@ -6,7 +6,7 @@ import { USER_DATA } from "../../data"
 const UserCardList = () => {
     return(
         <div className='user-cards-container'>
-        <UserCard userData={USER_DATA}/>
+        {USER_DATA.map(user => <UserCard key={user.id} userData={user}/> )}
         </div>
     )
 }
