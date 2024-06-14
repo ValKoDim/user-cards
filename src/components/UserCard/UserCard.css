@@ -1,0 +1,65 @@
+.user-card{
+    background-color: #8964b0;
+    color: white;
+    font-style:normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 2px 8px #8964b0;
+}
+.profile-border{
+    border-color: #40E0D0;
+    border-style: solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.profile-img{
+    height: 100%;
+    width: 100%;
+}
+button{
+    background-color: #8964b0;
+    border: solid;
+    border-color: #40E0D0;
+    color: #8964b0;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2px;
+}
+button#message-btn{
+    background-color: #40E0D0
+}
+button#follow-btn{
+    color: #40E0D0;
+}
+h4{
+    margin-right: 230px;
+    margin-bottom: -8px;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-list li{
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border:solid;
+    border-width: 0.5px;
+}
+.pro-badge{
+    margin-right: auto;
+    background-color: #40E0D0;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    box-shadow: 2px 1px 2px 2px #40E0D0;
+}
