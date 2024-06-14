@@ -3,27 +3,24 @@ import './UserCard.css'
 
 const UserCard = ({userData}) => {
     return(
-        <>
-            {userData.map(user => 
-            <div className='user-card' key={user.id}>
-                {user.isPro && <div className='pro-badge'><p>Pro</p></div>}
+            <div className='user-card'>
+                {userData.isPro && <div className='pro-badge'><p>Pro</p></div>}
                 <div className='profile-border'>
-                    <img className='profile-img' src={user.image}></img>
+                    <img className='profile-img' src={userData.image}></img>
                 </div>
-                <h2 className='names'>{user.firstName} {user.lastName}</h2>
-                <h3>{user.city}</h3>
-                <h3>{user.description}</h3>
+                <h2 className='names'>{userData.firstName} {userData.lastName}</h2>
+                <h3>{userData.city}</h3>
+                <h3>{userData.description}</h3>
                 <div className='butons-wraper'>
                     <button id='message-btn'>Message</button>
                     <button id='follow-btn'>Following</button>
                 </div>
                 <h4>Skills</h4>
                 <ul className='skills-list'>
-                    {user.skills.map(skill => <li key={skill}>{skill}</li>)}
+                    {userData.skills.map(skill => <li key={skill}>{skill}</li>)}
                 </ul>
             </div>
-            )}
-        </>
+            
     )
 }
 
