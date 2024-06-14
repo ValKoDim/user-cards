@@ -4,7 +4,7 @@ import './UserCard.css'
 const UserCard = ({userData}) => {
     return(
             <div className='user-card'>
-                {userData.isPro && <div className='pro-badge'><p>Pro</p></div>}
+                {userData.isPro && <div className='pro-badge'>Pro</div>}
                 <div className='profile-border'>
                     <img className='profile-img' src={userData.image}></img>
                 </div>
