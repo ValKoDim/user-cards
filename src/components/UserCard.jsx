@@ -1,9 +1,9 @@
-import { USER_DATA } from "../data"
+/* eslint-disable react/prop-types */
 
-const UserCard = () => {
+const UserCard = ({userData}) => {
     return(
-        <div className='user-cards-container'>
-            {USER_DATA.map(user => 
+        <>
+            {userData.map(user => 
             <div className='user-card' key={user.id}>
                 {user.isPro && <div className='pro-badge'><p>Pro</p></div>}
                 <div className='profile-border'>
@@ -22,7 +22,7 @@ const UserCard = () => {
                 </ul>
             </div>
             )}
-        </div>
+        </>
     )
 }
 
