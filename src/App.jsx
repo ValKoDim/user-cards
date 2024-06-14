@@ -1,4 +1,4 @@
-import UserCardList from "./components/UserCardList"
+import UserCardList from "./components/UserCardList/UserCardList"
 
 function App() {
 

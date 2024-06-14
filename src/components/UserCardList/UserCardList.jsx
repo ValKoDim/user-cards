@@ -1,5 +1,7 @@
-import UserCard from "./UserCard"
-import { USER_DATA } from "../data"
+import './UserCatdList.css'
+
+import UserCard from "../UserCard/UserCard"
+import { USER_DATA } from "../../data"
 
 const UserCardList = () => {
     return(
